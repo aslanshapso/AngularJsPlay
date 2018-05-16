@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html en="us" ng-app="app">
+
+<head>
+  <title>Getting started with Angular 1.5.x components</title>
+  <!-- bootsrap css-->
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- angularjs-->
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!-- The main app script-->
+  <script src="js/app.js"></script>
+
+  <!-- components -->
+  <script src="js/components/appComponent.js"></script>
+  <script src="js/components/user/userComponent.js"></script>
+  <script src="js/components/person/personComponent.js"></script>
+  <script src="js/components/family/familyComponent.js"></script>
+  <script src="js/components/home/homeComponent.js"></script>
+
+  <!-- services -->
+  <script src="js/shared/familyService.js"></script>
+  <script src="js/shared/colorService.js"></script>
+  <script src="js/shared/authorService.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="js/assets/css/custom.css">
+
+
+</head>
+
+<body class="container">
+  <!-- menu-bar directive from app componnet -->
+  <menu-bar brand="'Brand'"></menu-bar>
+
+
+  <ui-view></ui-view>
+</body>
+
+</html>

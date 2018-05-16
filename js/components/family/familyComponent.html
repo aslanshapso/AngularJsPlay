@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="card" style="width: 255px;" ng-repeat="family in familyCtrl.familyData">
+        <div class="card-body">
+            <h4 class="card-title">Family</h4>
+            <p class="card-text">
+                <img src="js/assets/images/person.png" alt="Mountain View" width="30" height="30"> {{family.person}}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNOYiVI0IKNLWDomHQ974C_aJ7TuY1cIYa1qoJbZt71oxFB5WSA" alt="Mountain View"
+                    width="30" height="30"> {{family.wife}}
+            </p>
+            <div>
+                <p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnyAarQ42ENUpVU9AaKzSSM36oNpDK5yEdPVdDGXdOnR43Z1dt" alt="Mountain View"
+                        width="30" height="30"> {{family.parents.father}}
+
+                    <img src="js/assets/images/mother.jpg" alt="Mountain View" width="30" height="30"> {{family.parents.mother}}
+                </p>
+            </div>
+            <p>Children: {{family.childrens.length}}
+                <div ng-repeat="child in family.childrens">
+                    {{child.name}}
+                </div>
+        </div>
+    </div>

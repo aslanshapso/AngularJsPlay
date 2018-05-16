@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Random Colors using $q and $interval and $timeout</h1>
+    <div>
+        <h1 ng-style="{'background-color': homeCtrl.displayColor}">
+            <strong>Color: {{homeCtrl.displayColor}}</strong>
+        </h1>
+        <h1 ng-style="{'background-color': homeCtrl.displayColor2}">
+            <strong>Color: {{homeCtrl.displayColor2}}</strong>
+        </h1>
+        <span class="dot" ng-style="{'background-color': homeCtrl.displayColor,'margin-left': homeCtrl.counter + 'px'}">
+        </span>
+
+        <div>
+            <span class="dot" ng-style="{'background-color': homeCtrl.displayColor2,'margin-left': homeCtrl.counter2 + 'px'}">
+            </span>
+        </div>
+    </div>
+</div>
